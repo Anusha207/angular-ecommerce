@@ -1,0 +1,17 @@
+<!-- <form class="form-header" onsubmit="return false;" method="GET">
+    <input class="au-input au-input-xl" type="text" name="search"
+        placeholder="Search for data ..." />
+    <button class="au-btn-submit" type="submit">
+        Search
+    </button>
+</form> -->
+
+<div class="form-header" >
+    <input #myinput type="text"  
+        placeholder="Search for products ..."
+        class="au-input au-input-xl" 
+        (keyup.enter)="doSearch(myinput.value)" />
+    <button  (click)="doSearch(myinput.value)" class="au-btn-submit" >
+        Search
+    </button>
+</div>
